@@ -1,0 +1,37 @@
+input#search {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAXJJREFUOBGdk80rhFEUh42PQfmKDZEaU8MCK4WNkmRlJVt/nNlZ2lhYI0VKxIYoUco3jTB4nnfmnd5pvuJXT/e+59x77rnnnjdWV6w4n9MwAt1QD89wBlvwBCWKRSxJ5ovQlbe9MH6CwdQHbMIe/EBBYZAxLEugcwe24RVUC4zCPDTDLmxAQQ3MOmAFTD0NnuSpob6YXMMRjEMCruAeArlxCprAO59DJT3iWM87Z6KLDJLKG/ajjgrzU+xvMAit4RqDWMgMPITGGqNXU525IVcHXyAOjaGxxhhmEBY+KOYtmyxwX43Nuq2d67xSUZBDDMon9HrVNIfTA4+jizSYiR3aD21wAVmIyn6ahFkwizXw6QMZxAazrYdhCGws62PqBtW+ABOgfOoDKAQJO1anxfUk+yZq5zOQPeSBSfCFVuEdyi72X0lBjwvQHVzCDZjhMpidgdKQKXci9qoqCWRN/qpvNpxALyRg4D9B2BfUxkDtkP0FUAlGpbIoezoAAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+  background-position: 1em;
+  background-color: var(--white1);
+  border: none;
+  outline: none;
+  border-radius: 1em;
+  border-radius: 3.2em;
+  /* height: 3em; */
+  width: 28em;
+  padding-left: 55px;
+  padding-right: 10px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 19px;
+  letter-spacing: 0;
+  line-height: 23px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 19px;
+  letter-spacing: 0;
+  line-height: 23px;
+}
+
+:-ms-input-placeholder {
+  font-size: 19px;
+  letter-spacing: 0;
+  line-height: 23px;
+}
+
+::placeholder {
+  font-size: 19px;
+  letter-spacing: 0;
+  line-height: 23px;
+}

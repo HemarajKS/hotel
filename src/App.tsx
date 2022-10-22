@@ -1,7 +1,12 @@
-import React, { useEffect } from 'react';
+import './style.css';
+import Home from './views/homePage/home';
 
 function App() {
-  return <div className="App">hi</div>;
+  return (
+    <div className="App">
+      <Home />
+    </div>
+  );
 }
 
 export default App;

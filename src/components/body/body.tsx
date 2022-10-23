@@ -1,17 +1,11 @@
 import './body.css';
-import Maps from '../Map/map';
+import Fetch from '../../utils/fetch';
 
-const Body = () => {
-  const location = {
-    address: '1600 Amphitheatre Parkway, Mountain View, california.',
-    lat: 37.42216,
-    lng: -122.08427,
-  };
-  return (
-    <div className="body">
-      <Maps />
-    </div>
-  );
+const Body = (props: any) => {
+  console.log('first', props.props);
+  console.log('fetched data', Fetch());
+
+  return <div className="body">Data</div>;
 };
 
 export default Body;

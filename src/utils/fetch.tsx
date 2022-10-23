@@ -4,7 +4,7 @@ const Fetch = () => {
   const [restaurents, setRestaurents] = useState([]);
   useEffect(() => {
     fetch(
-      'https://developers.zomato.com/api/v2.1/geocode?lat=13.3409&lon=74.7421',
+      'https://developers.zomato.com/api/v2.1/geocode?lat=12.9716&lon=77.5946',
       {
         headers: {
           Accept: 'application/json',

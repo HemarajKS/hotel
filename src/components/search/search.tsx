@@ -4,19 +4,14 @@ import './search.css';
 
 const Search = (props: any) => {
   const searchHandler = (e: any) => {
-    props.onSearch(e.target.value);
+    e.preventDefault();
+    props.onSearch(e.target.search.value);
   };
 
   return (
-    <div>
-      <input
-        type="text"
-        name="search"
-        id="search"
-        placeholder="Search"
-        onChange={searchHandler}
-      />
-    </div>
+    <form onSubmit={searchHandler}>
+      <input type="text" name="search" id="search" placeholder="Search" />
+    </form>
   );
 };
 

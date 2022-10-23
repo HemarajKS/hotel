@@ -3,12 +3,17 @@ import Fetch from '../../utils/fetch';
 import GeoCode from '../../utils/geoCode';
 
 const Body = (props: any) => {
+  // interface Person {
+  //   results: any;
+  // }
   console.log('search', props.props);
   console.log('fetched data', Fetch());
 
-  const place = GeoCode(props.props);
+  const place: any = GeoCode(props.props);
 
-  console.log('geocode', place.results);
+  if (place.results) {
+    console.log('geocode', place.results);
+  }
 
   return <div className="body">Data</div>;
 };

@@ -11,10 +11,6 @@ const Body = (props: any) => {
 
   const place: any = GeoCode(props.props);
 
-  if (place.results) {
-    console.log('geocode', place.results);
-  }
-
   return <div className="body">Data</div>;
 };
 

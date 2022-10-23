@@ -5,7 +5,10 @@ import GeoCode from '../../utils/geoCode';
 const Body = (props: any) => {
   console.log('search', props.props);
   console.log('fetched data', Fetch());
-  console.log('geocode', GeoCode(props.props));
+
+  const place = GeoCode(props.props);
+
+  console.log('geocode', place.results);
 
   return <div className="body">Data</div>;
 };

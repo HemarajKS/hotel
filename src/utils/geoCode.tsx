@@ -4,7 +4,9 @@ const GeoCode = (search: any) => {
   const [location, setLocataion] = useState('');
   console.log('S', search);
 
-  const url = `https://trueway-geocoding.p.rapidapi.com/Geocode?address=${search}&language=en`;
+  const url = `https://trueway-geocoding.p.rapidapi.com/Geocode?address=${
+    search || 'udupi'
+  }&language=en`;
 
   const options = {
     method: 'GET',

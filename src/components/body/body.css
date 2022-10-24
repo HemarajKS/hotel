@@ -15,3 +15,9 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+
+.restaurents {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}

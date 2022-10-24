@@ -17,19 +17,25 @@ const Body = (props: any) => {
         <div className="searchResults">
           {fetchedData.nearby_restaurants.map((ele: any, i: any) => (
             <div className="searchItems" key={i}>
-              <div className="restaurentThumbnail">
-                <img src={ele.restaurant.thumb} alt={ele.restaurant.name} />
-              </div>
-              <div className="restaurentDetails">
-                {' '}
-                <div className="restaurentName">
-                  {i + 1}
-                  {'.'}
-                  {ele.restaurant.name}
+              <div className="restaurents">
+                <div className="restaurentThumbnail">
+                  <img
+                    src={ele.restaurant.thumb}
+                    alt={ele.restaurant.name}
+                    height="100px"
+                  />
                 </div>
-                <div className="cuisines">{ele.restaurant.cuisines}</div>
-                <div className="restaurentLocation">
-                  {ele.restaurant.location.address}
+                <div className="restaurentDetails">
+                  {' '}
+                  <div className="restaurentName">
+                    {i + 1}
+                    {'.'}
+                    {ele.restaurant.name}
+                  </div>
+                  <div className="cuisines">{ele.restaurant.cuisines}</div>
+                  <div className="restaurentLocation">
+                    {ele.restaurant.location.address}
+                  </div>
                 </div>
               </div>
               <div className="rating">

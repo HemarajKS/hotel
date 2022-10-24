@@ -1,13 +1,23 @@
 import { useState, useEffect } from 'react';
 
-const Fetch = (place: any) => {
+const Fetch = (place: any | null) => {
   const [restaurents, setRestaurents] = useState([]);
 
   useEffect(() => {
     fetch(
       `https://developers.zomato.com/api/v2.1/geocode?lat=${
-        place && place.results && place.results[0].location.lat
-      }&lon=${place && place.results && place.results[0].location.lng}`,
+        place &&
+        place.results &&
+        JSON.stringify(place.results) !== JSON.stringify([])
+          ? place && place.results && place.results[0].location.lat
+          : '13.3409'
+      }&lon=${
+        place &&
+        place.results &&
+        JSON.stringify(place.results) !== JSON.stringify([])
+          ? place.results && place.results[0].location.lng
+          : '74.7421'
+      }`,
       {
         headers: {
           Accept: 'application/json',

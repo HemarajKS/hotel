@@ -7,18 +7,17 @@ const Body = (props: any) => {
   //   results: any;
   // }
   console.log('search', props.props);
-  console.log('fetched data', Fetch());
 
   const place: any = GeoCode(props.props);
-  console.log('====================================');
-  console.log(place);
-  console.log('====================================');
+  const fetchedData: any = Fetch(place);
+
+  console.log('fetched Data', fetchedData);
 
   return (
     <div className="body">
-      {place
+      {/* {place
         ? JSON.stringify(place.results[0].location)
-        : JSON.stringify({ lat: 13.340905, lng: 74.742119 })}
+        : JSON.stringify({ lat: 13.340905, lng: 74.742119 })} */}
     </div>
   );
 };

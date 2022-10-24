@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 const GeoCode = (search: any) => {
   const [location, setLocataion] = useState('');
-  console.log('S', search);
+
 
   const url = `https://trueway-geocoding.p.rapidapi.com/Geocode?address=${
     search || 'udupi'

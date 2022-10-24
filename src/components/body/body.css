@@ -6,3 +6,12 @@
   background-color: var(--white1);
   width: 47em;
 }
+
+.searchItems {
+  padding: 20px 20px 20px 20px;
+  border-bottom: 1px solid #97979739;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+}

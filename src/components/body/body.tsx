@@ -13,9 +13,17 @@ const Body = (props: any) => {
 
   return (
     <div className="body">
-      {fetchedData && fetchedData.location
-        ? JSON.stringify(fetchedData.location)
-        : JSON.stringify(fetchedData.message)}
+      {fetchedData && fetchedData.location ? (
+        <div className="searchResults">
+          {fetchedData.nearby_restaurants.map((ele: any, i: any) => (
+            <div className="sesrchItems" key={i}>
+              {ele.restaurant.name}
+            </div>
+          ))}
+        </div>
+      ) : (
+        JSON.stringify(fetchedData.message)
+      )}
     </div>
   );
 };
